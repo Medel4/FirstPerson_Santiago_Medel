@@ -13,7 +13,7 @@ public class FirstPerson : MonoBehaviour
 
         cc = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
-
+            
     }
 
     
