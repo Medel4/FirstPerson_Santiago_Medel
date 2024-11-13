@@ -21,7 +21,7 @@ public class SistemaInteracciones : MonoBehaviour
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, distanciaInteraccion))
         {
 
-            if (hit.transform.CompareTag("CajaMunicion"))
+            if (hit.transform.TryGetComponent(out CajaMunicion ScriptCaja))
             {
 
                 interactuableActual = hit.transform;
