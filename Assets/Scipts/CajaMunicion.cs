@@ -16,4 +16,11 @@ public class CajaMunicion : MonoBehaviour
     {
         
     }
+
+    public void AbrirCaja()
+    {
+
+        anim.SetTrigger("Abrir");
+
+    }
 }

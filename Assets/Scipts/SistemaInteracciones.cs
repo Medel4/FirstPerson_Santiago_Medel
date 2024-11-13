@@ -26,6 +26,12 @@ public class SistemaInteracciones : MonoBehaviour
 
                 interactuableActual = hit.transform;
                 interactuableActual.GetComponent<Outline>().enabled = true;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+
+                    ScriptCaja.AbrirCaja();
+
+                }
 
             }
 
